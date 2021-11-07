@@ -28,4 +28,4 @@ let lightbox = new SimpleLightbox(".gallery__item", {
 lightbox.on('closed.simplelightbox', function () {
  console.log('Спасибо за уделенное время');   
 });
-// console.log(galleryItems);
+console.log(galleryItems);
