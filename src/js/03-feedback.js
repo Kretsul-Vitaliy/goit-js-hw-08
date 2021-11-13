@@ -10,7 +10,7 @@ formRef.addEventListener('input', throttle(onInputForm, 500));
 function onInputForm() {
   const formData = new FormData(formRef);
   let userForm = {};
-  formData.forEach((value, name) => (userForm[name] = value));
+  formData.forEach((value, name) => (userForm[name] = value.trim()));
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(userForm));
 }
 
